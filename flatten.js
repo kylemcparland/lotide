@@ -28,10 +28,7 @@ const flatten = function (array) {
   let flatArray = [];
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
-      for (let x = 0; x < array[i].length; x++) {
-        let nestedVar = array[i][x];
-        flatArray.push(nestedVar);
-      }
+      flatArray = flatArray.concat(array[i]);
     } else {
       flatArray.push(array[i]);
     }
@@ -42,3 +39,21 @@ const flatten = function (array) {
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 //Check if array is flattened:
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+
+
+
+////Two nested loop method:
+// const flatten = function (array) {
+//   let flatArray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (Array.isArray(array[i])) {
+//       for (let x = 0; x < array[i].length; x++) {
+//         let nestedVar = array[i][x];
+//         flatArray.push(nestedVar);
+//       }
+//     } else {
+//       flatArray.push(array[i]);
+//     }
+//   }
+//   return flatArray;
+// };
