@@ -30,6 +30,7 @@ const without = function (original, exclude) {
       if (original[i] === exclude[x]) {
         // console.log("Found a match. Excluding: ", original[i]);
         matchFound = true;
+        break;
       }
     }
     if (matchFound === false) {
