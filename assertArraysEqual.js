@@ -1,9 +1,9 @@
-const assertArraysEqual = function(arr1, arr2, expected) {
-  let actual = eqArrays(arr1, arr2);
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+const assertArraysEqual = function(arr1, arr2) {
+  let input = eqArrays(arr1, arr2);
+  if (input === true) {
+    console.log(`✅✅✅ Assertion Passed: Arrays match`);
   } else {
-    console.log(`⛔⛔⛔ Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`⛔⛔⛔ Assertion Failed: Arrays do not match`);
   }
 };
 
@@ -19,20 +19,11 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-console.log("//Matching arrays + true = Assertion passed:");
-assertArraysEqual([1, 2, 3], [1, 2, 3], true);
+console.log("//Matching arrays = Assertion passed:");
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
-console.log("//Matching arrays + false = Assertion failed:");
-assertArraysEqual([1, 2, 3], [1, 2, 3], false);
+console.log("//Non-matching arrays = Assertion failed:");
+assertArraysEqual([1, 2, 4], [1, 2, 3]);
 
-console.log("//Non-matching arrays + false = Assertion passed:");
-assertArraysEqual([1, 2, 4], [1, 2, 3], false);
-
-console.log("//Non-matching arrays + true = Assertion failed:");
-assertArraysEqual([1, 2, 4], [1, 2, 3], true);
-
-console.log("//Non-matching arrays (different lengths) + false = Assertion passed:");
-assertArraysEqual([1, 2, 3, 4], [1, 2, 3], false);
-
-console.log("//Non-matching arrays (different lengths) + true = Assertion failed:");
-assertArraysEqual([1, 2, 3, 4], [1, 2, 3], true);
+console.log("//Non-matching arrays (different lengths) = Assertion failed:");
+assertArraysEqual([1, 2, 3, 4], [1, 2, 3]);
