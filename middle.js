@@ -27,8 +27,7 @@ const middle = function(array) {
     //console.log("Array has at least 3 variables and is an even number.");
     let middleVar = array.length / 2 - 1;
     middleOfArr.push(array[middleVar]);
-    middleVar++;
-    middleOfArr.push(array[middleVar]);
+    middleOfArr.push(array[middleVar + 1]);
   } else if (array.length >= 3) {
     //console.log("Array has at least 3 variables and is an odd number.");
     let middleVar = Math.floor(array.length / 2);
