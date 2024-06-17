@@ -7,6 +7,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
+//countOnly initialization
 const countOnly = function (allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {
