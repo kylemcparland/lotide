@@ -27,3 +27,6 @@ assertArraysEqual([1, 2, 4], [1, 2, 3]);
 
 console.log("//Non-matching arrays (different lengths) = Assertion failed:");
 assertArraysEqual([1, 2, 3, 4], [1, 2, 3]);
+
+console.log("//Non-matching arrays (empty array) = Assertion failed:");
+assertArraysEqual([], [1, 2, 3]);
