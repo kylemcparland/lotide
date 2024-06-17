@@ -1,5 +1,12 @@
-//eqArrays initialization
+// INITIALIZE eqArrays
 const eqArrays = function(arr1, arr2) {
+  if (arr1 === undefined || arr2 === undefined) {
+    if (arr1 === arr2) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -21,6 +28,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
+// INITIALIZE middle
 const middle = function(array) {
   let middleOfArr = [];
   if (array.length >= 3 && array.length % 2 === 0) {

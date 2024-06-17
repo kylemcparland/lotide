@@ -1,5 +1,12 @@
-//eqArrays initialization
-const eqArrays = function (arr1, arr2) {
+// INITIALIZE eqArrays
+const eqArrays = function(arr1, arr2) {
+  if (arr1 === undefined || arr2 === undefined) {
+    if (arr1 === arr2) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   if (arr1.length !== arr2.length) {
     return false;
   }
