@@ -44,6 +44,8 @@ const eqObjects = function(object1, object2) {
       }
     }
     return true;
+  } else {
+    return false;
   }
 };
 
@@ -57,4 +59,4 @@ const longSleeveMultiColorShirtObject = {
   colors: ["red", "blue"],
   sleeveLength: "long",
 };
-eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject); // => fals
+assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // => false
