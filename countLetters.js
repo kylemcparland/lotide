@@ -20,7 +20,7 @@ const countLetters = function (sentence) {
     }
   }
   return numOfLetters;
-}
+};
 
 let testSentence = countLetters("lighthouse in the house");
 
