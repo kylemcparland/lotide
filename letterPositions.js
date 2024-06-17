@@ -46,7 +46,6 @@ const letterPositions = function(inputString) {
 };
 
 const testSentence = letterPositions("lighthouse in the house");
-console.log(testSentence);
 
 assertArraysEqual(testSentence["i"], [1, 11]);
 assertArraysEqual(testSentence["h"], [3, 5, 15, 18]);
