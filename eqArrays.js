@@ -6,7 +6,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// INITIALIZE eqArrays
 const eqArrays = function(arr1, arr2) {
+  //check if either array is undefined
+  if (arr1 === undefined || arr2 === undefined) {
+    if (arr1 === arr2) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  //check if array lengths do not match
   if (arr1.length !== arr2.length) {
     return false;
   }
