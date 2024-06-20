@@ -32,7 +32,7 @@ const eqArrays = function(arr1, arr2) {
 const takeUntil = function(array, callback) {
   let result = [];
   for (let item of array) {
-    if (callback(item) !== false) {
+    if (callback(item)) {
       return result;
     }
     result.push(item);
