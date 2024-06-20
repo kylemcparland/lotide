@@ -37,10 +37,7 @@ const takeUntil = function(array, callback) {
     }
     result.push(item);
   }
-  if (result.length === array.length) {
-    console.log("Value not found. Array returned unedited.");
-    return result;
-  }
+  return result;
 };
 
 // TEST CASES:
