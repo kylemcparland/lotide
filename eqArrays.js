@@ -1,6 +1,4 @@
-// INITIALIZE eqArrays
 const eqArrays = function(arr1, arr2) {
-  //check if either array is undefined
   if (arr1 === undefined || arr2 === undefined) {
     if (arr1 === arr2) {
       return true;

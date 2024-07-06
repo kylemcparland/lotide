@@ -1,4 +1,3 @@
-// INITIALIAZE head
 const head = function(arr) {
   return arr[0];
 };
