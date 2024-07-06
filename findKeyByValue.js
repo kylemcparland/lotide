@@ -32,3 +32,5 @@ console.log("Assertion will fail. The Expanse indeed appears in the object");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), undefined);
 console.log("Assertion will pass. Blank string returns as undefined.");
 assertEqual(findKeyByValue(bestTVShowsByGenre, ""), undefined);
+
+module.exports = findKeyByValue;

@@ -43,3 +43,5 @@ const result2 = findKey(
 ); // => "Rococo Rot"
 
 assertEqual(result2, "Rococo Rot");
+
+module.exports = findKey;

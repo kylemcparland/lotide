@@ -53,3 +53,5 @@ const myShirt = { colors: ["red", "blue"], size: "medium" };
 const yourShirt = { size: "medium", colors: ["red", "blue"] };
 
 assertObjectsEqual(myShirt, yourShirt);
+
+module.exports = assertObjectsEqual;

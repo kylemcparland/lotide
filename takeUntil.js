@@ -59,3 +59,5 @@ console.log('---');
 const data3 = ["My", "Name", "Is", "Kyle", 2, "McParland"];
 const results3 = takeUntil(data3, x => typeof x === "number");
 assertArraysEqual(results3, ["My", "Name", "Is", "Kyle"]);
+
+module.exports = takeUntil;
