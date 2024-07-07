@@ -1,6 +1,6 @@
 {
   "name": "@kylemcparland/lotide",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A library published for learning purposes.",
   "main": "index.js",
   "directories": {

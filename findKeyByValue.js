@@ -1,4 +1,3 @@
-// INITIALIZE findKeyByValue
 const findKeyByValue = function(object, value) {
   const keys = Object.keys(object);
   for (let i = 0; i < keys.length; i++) {
